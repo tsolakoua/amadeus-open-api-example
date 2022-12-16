@@ -15,8 +15,8 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only optional values
     body = dict(
         grant_type="client_credentials",
-        client_id="",
-        client_secret="",
+        client_id="YOUR_API_KEY",
+        client_secret="YOUR_API_SECRET",
     )
     # The OAuth 2.0 token endpoint
     api_response = api_instance.oauth2_token(

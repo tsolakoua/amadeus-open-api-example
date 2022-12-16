@@ -239,7 +239,7 @@ class ApiResponseFor200(api_client.ApiResponse):
 _response_for_200 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor200,
     content={
-        'application/json': api_client.MediaType(
+        'application/vnd.amadeus+json': api_client.MediaType(
             schema=SchemaFor200ResponseBodyApplicationJson),
     },
 )
@@ -530,6 +530,7 @@ _status_code_to_response = {
 }
 _all_accept_content_types = (
     'application/json',
+    'application/vnd.amadeus+json'
 )
 
 
